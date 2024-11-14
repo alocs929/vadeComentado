@@ -125,9 +125,9 @@ chrome.runtime.onMessage.addListener((message) => {
 
 chrome.storage.sync.get("applyAllActive", (data) => {
   if (data.linkActive) {
+    applyRevogado();
+    applyLinks();
     removeLayout();
-    removeLinks();
-    removeRevogado();
   };
 });
 

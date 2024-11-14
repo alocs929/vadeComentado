@@ -1,21 +1,31 @@
 /* Aplica o layout apenas quando a extensão estiver ativa */
 body.layout-ativo {
-  display: flex;
-  justify-content: start;
-  padding: 20px;
+  /* height: 100vh; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: stretch; */
+  /* justify-content: start; */
+  padding: 10px;
 }
 
 /* Estiliza a área de conteúdo principal */
 #conteudo {
+  display: flex;
+  flex-direction: column;
   width: 60%;
-  padding-right: 20px;
+  padding-right: 10px;
+  border-right: 1.5px solid blue;
+  flex-grow: 1;
+
 }
 
 /* Estiliza a área de anotação */
 #anotacao {
+  display: flex;
+  flex-direction: column;
   
-  width: 40%;
-  border-left: 1px solid blue;
-  padding-left: 10px;
   height: 100%; 
+  width: 40%;
+
+  
 }
